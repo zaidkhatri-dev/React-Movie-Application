@@ -58,7 +58,7 @@ const App = () => {
       }
 
     } catch (error) {
-      setErrorMsg("Error fetching Movies. Please try again later")
+      setErrorMsg("Error fetching Movies. Please try again later",error)
     }finally{
       setIsLoading(false)
     }
@@ -83,12 +83,12 @@ const App = () => {
   },[])
   
   return (
-    <main className="bg-[url('BG.png')]">
+    <main className="bg-[url('../public/BG.png')]">
       <div className='pattern'/>
 
       <div className='wrapper'>
         <header>
-          <img src="hero-img.png" alt="" />
+          <img src="../public/hero-img.png" alt="" />
           <h1>Find <span className='text-gradient'>Movies</span> You'll Enjoy Without the Hassle</h1>
           <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}></Search>
         </header>
