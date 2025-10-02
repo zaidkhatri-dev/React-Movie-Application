@@ -1,5 +1,6 @@
 {
   "name": "react-js",
+  "homepage": "https://zaidkhatri-dev.github.io/React-Movie-Application/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,11 +8,13 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.13",
     "appwrite": "^20.0.0",
+    "gh-pages": "^6.3.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-use": "^17.6.0",
